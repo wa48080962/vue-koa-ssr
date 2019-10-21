@@ -1,0 +1,22 @@
+// 配置代码检查选项
+{
+    "extends": "standard",
+    "parserOptions":{
+        "parser": "babel-eslint"
+    },
+    "parser": "vue-eslint-parser",
+    "plugins": [
+        "vue"
+    ],
+    // 以下是规避制表符和空格混用的情况 以及定义一些可全局的变量不必声明的
+    "rules":{
+        "no-tabs": "off",
+        "no-mixed-spaces-and-tabs": 0,
+        "no-new": "off"
+    },
+    "globals":{
+        "document": true,
+        "localStorage": true,
+        "window": true
+    }
+}
